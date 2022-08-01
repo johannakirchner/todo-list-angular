@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": 2,
+      "name": "Clean Room",
+      "description": "Clean the filth",
+      "done": false
+    },
+    {
+      "id": 3,
+      "name": "Study Angular",
+      "description": "Study the Angular Framework",
+      "done": true
+    },
+    {
+      "id": 4,
+      "name": "World Domination",
+      "description": "Take over the world",
+      "done": true
+    },
+    {
+      "id": 5,
+      "name": "Study CSS",
+      "description": "Learn how to use CSS",
+      "done": true
+    }
+  ]
+}

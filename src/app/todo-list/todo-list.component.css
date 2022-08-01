@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fafafa;
+}
+
+
+
+h1 {
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    padding-top: 2px;
+    font-weight: bold;
+}
+
+.add {
+    padding: 7px;
+    font-weight: bold;
+}
+
+button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 5px;
+    vertical-align: middle;
+    font-family: inherit;
+}
+
+.list {
+    border: 1.5px solid #fafafa ;
+    border-radius: 9px;
+    width: 400px;
+    padding: 6px 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 5px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.task {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px;
+    border-color: #ADA8AD;
+    padding: 5px;
+    align-items: center;
+}
+
+.desc {
+    font-size: 11px;
+    padding-left: 25px;
+}
+
+::ng-deep .mat-checkbox-ripple .mat-ripple-element {
+    background-color: black !important;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: black !important;
+}
+
+::ng-deep .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: black !important;
+}
+
+::ng-deep .mat-checkbox-checked .mat-checkbox-label {
+    text-decoration: line-through;
+}

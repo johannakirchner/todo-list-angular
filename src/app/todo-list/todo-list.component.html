@@ -1,0 +1,25 @@
+<div class="list">
+    <h1>To-Do</h1>
+    <div>
+        <div class="task" *ngFor="let t of tasks">
+            <div>
+            <mat-checkbox [(ngModel)]="t.done" (ngModelChange)="updateDone(t)">
+                {{ t.name }}
+                
+            </mat-checkbox>
+            <p class="desc">{{ t.description }}</p>
+        </div>
+            <div>
+                <button (click)="deleteTask(t.id)">
+                    <mat-icon fontIcon="delete" color="white"></mat-icon>
+                </button>
+                <button (click)="editTask(t.id)">
+                    <mat-icon fontIcon="edit"></mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+    <button class="add">
+        Add
+    </button>
+</div>
