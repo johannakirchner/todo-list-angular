@@ -7,15 +7,17 @@
 
 
 h1 {
-    font-family: 'Oxygen', sans-serif;
     text-align: center;
     padding-top: 2px;
     font-weight: bold;
+
+    font-family: 'Mukta', sans-serif;
 }
 
 .add {
     padding: 7px;
     font-weight: bold;
+    font-family: 'Mukta', sans-serif;
 }
 
 button {
@@ -37,7 +39,7 @@ button {
     flex-direction: column;
     margin: 0 auto;
     gap: 5px;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Mukta', sans-serif;
 }
 
 .task {
@@ -48,6 +50,7 @@ button {
     border-color: #ADA8AD;
     padding: 5px;
     align-items: center;
+    font-family: 'Mukta', sans-serif;
 }
 
 .desc {

@@ -16,12 +16,16 @@ export class TodoService {
     return this._http.get<task[]>(this.url);
   }
 
-  updateDone(t: task){
-    return this._http.put(this.url + '/' + t.id, {...t});
+  updateDone(t: task) {
+    return this._http.put(this.url + '/' + t.id, { ...t });
   }
 
-  deleteTask(id: number){
+  deleteTask(id: number) {
     return this._http.delete(this.url + '/' + id);
+  }
+
+  addTask(t: task) {
+    return this._http.post(this.url, {...t});
   }
 
 }
