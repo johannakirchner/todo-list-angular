@@ -4,57 +4,64 @@
     color: #fafafa;
 }
 
-
+.b {
+    height: 40px;
+    width: 40px;
+}
 
 h1 {
     text-align: center;
     padding-top: 2px;
     font-weight: bold;
-
-    font-family: 'Mukta', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
 }
 
 .add {
     padding: 7px;
+    margin-top: 10px;
     font-weight: bold;
-    font-family: 'Mukta', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    height: 2vw;
+    margin: 12px;
 }
 
 button {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: #1E1E1E;
     cursor: pointer;
     border-radius: 8px;
     margin: 5px;
     vertical-align: middle;
     font-family: inherit;
+    border: none;
+    font-size: 20px;
 }
 
 .list {
-    border: 1.5px solid #fafafa ;
-    border-radius: 9px;
-    width: 400px;
-    padding: 6px 8px;
+    border-radius: 12px;
+    width: 40vw;
+    padding: 11px 13px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    gap: 5px;
-    font-family: 'Mukta', sans-serif;
+    gap: 10px;
+    background-color: #1E1E1E;
+    font-size: 22px;
 }
 
 .task {
-    padding-top: 10px;
+    padding-top: 15px;
     display: flex;
     justify-content: space-between;
     border-bottom: solid 1px;
-    border-color: #ADA8AD;
-    padding: 5px;
+    padding: 10px;
     align-items: center;
-    font-family: 'Mukta', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .desc {
-    font-size: 11px;
+    font-size: 15px;
     padding-left: 25px;
 }
 

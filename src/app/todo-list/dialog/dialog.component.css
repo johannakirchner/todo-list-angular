@@ -1,15 +1,35 @@
 * {
-    font-family: 'Mukta', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+p {
+    font-size: 18px;
+    width: 100%;
+}
+
+mat-form-field {
+    width: 100%;
 }
 
 button {
-    background-color: black;
+    background-color: #1E1E1E;
     color: white;
     cursor: pointer;
     border-radius: 8px;
     margin: 5px;
     vertical-align: middle;
     font-family: inherit;
+    width: 100%;
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+}
+
+.e {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 

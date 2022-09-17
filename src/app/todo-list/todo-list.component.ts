@@ -25,15 +25,16 @@ export class TodoListComponent implements OnInit {
   getTasks() {
     this._service.getTasks().subscribe({
       next: (r) => {
-        this.tasks = r;  
+        this.tasks = r;
       }
-      
+
     });
   }
 
-  updateDone(t: task) {
+  updateTask(t: task) {
     this._service.updateDone(t).subscribe({
       next: (r) => {
+        this.getTasks();
       }
     });
   }
@@ -45,10 +46,6 @@ export class TodoListComponent implements OnInit {
         this.tasks = this.tasks.filter(task => task.id !== id)
       }
     })
-  }
-
-  editTask(id: number) {
-
   }
 
   addTask(t: task) {
@@ -69,7 +66,8 @@ export class TodoListComponent implements OnInit {
 
   openAdd() {
     const dialogRef = this.dialog.open(DialogComponent, {
-      width: '250px',
+      width: '20%',
+      data: { id: 0, name: "", description: "", done: false }
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -78,5 +76,16 @@ export class TodoListComponent implements OnInit {
 
   }
 
+  openEdit(task: task) {
+    const dialogRef = this.dialog.open(DialogComponent, {
+      width: '250px',
+      data: { id: task.id, name: task.name, description: task.description, done: task.done }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      this.updateTask(result.data);
+    })
+
+  }
 
 }

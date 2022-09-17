@@ -1,17 +1,15 @@
-<div>
+<div class="e">
+    Task Title
     <p>
-        Task Title
         <mat-form-field appearance="outline">
-            <input matInput type="text" [(ngModel)]="myTask.name" (keydown.enter)="addTask()" required>
+            <input matInput type="text" [(ngModel)]="myTask.name" (keydown.enter)="saveTask()" required>
         </mat-form-field>
     </p>
-
+    Description
     <p>
-        Description
         <mat-form-field appearance="outline">
-            <input matInput type="text" [(ngModel)]="myTask.description" (keydown.enter)="addTask()" required>
+            <input matInput type="text" [(ngModel)]="myTask.description" (keydown.enter)="saveTask()" required>
         </mat-form-field>
     </p>
-
-    <button class="add" (click)="addTask()">Salvar</button>
+    <button class="add" (click)="saveTask()">Save</button>
 </div>
